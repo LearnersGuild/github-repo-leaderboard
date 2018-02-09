@@ -1,6 +1,6 @@
 # github-repo-leaderboard
 
-This is a simple web application that will display the "top committers in past week" leaderboard for a given GitHub repository. It uses the [GitHub Commits API][github-commits-api] to achieve its functionality.
+This is a simple web application that will display the "top committers in past week" leaderboard for a given GitHub repository. It uses the [GitHub Commits API][github-commits-api-docs] to achieve its functionality.
 
 It is built using:
 
@@ -8,7 +8,7 @@ It is built using:
 - React.js
 - redux
 - webpack
-- bootstrap 4 alpha
+- bootstrap 4 (alpha)
 
 
 ## [Project Specification](SPECIFICATION.md)
@@ -30,7 +30,7 @@ Be sure you've read the [instructions for contributing](./CONTRIBUTING.md).
 
 4. Launch `flootty` to share your terminal:
 
-        $ flootty -c --unsafe --url=https://floobits.com/learnersguild/github-repo-leaderboard term1
+        $ flootty -c --unsafe --url=https://floobits.com/prattsj/github-leaderboard term1
 
 5. Run the server:
 
@@ -50,4 +50,4 @@ See the [LICENSE](./LICENSE) file.
 
 <!-- external resources -->
 
-[github-commits-api]: https://developer.github.com/v3/repos/commits/
+[github-commits-api-docs]: https://developer.github.com/v3/repos/commits/

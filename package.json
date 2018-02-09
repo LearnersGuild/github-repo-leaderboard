@@ -7,10 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/LearnersGuild/github-repo-leaderboard.git"
   },
-  "author": {
-    "name": "Jeffrey Wescott",
-    "email": "jeffrey@learnersguild.org"
-  },
   "scripts": {
     "build": "mkdir -p dist && webpack --config config/webpack-production-config.js",
     "icons:fetch": "mkdir -p dist && curl -s https://brand.learnersguild.org/icontags > dist/icons-metadata.json",
@@ -20,7 +16,7 @@
     "test": "echo 'NO TESTS YET!'"
   },
   "license": "ISC",
-  "private": false,
+  "private": true,
   "bugs": {
     "url": "https://github.com/LearnersGuild/github-repo-leaderboard/issues"
   },

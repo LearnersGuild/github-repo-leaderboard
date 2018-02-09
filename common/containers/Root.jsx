@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
-import computeLeaderboard from '../actions/computeLeaderboard'
+import fetchRepoLeaders from '../actions/fetchRepoLeaders'
 
 import Leaderboard from '../components/Leaderboard'
 
@@ -14,11 +14,11 @@ export class Root extends Component {
   }
 
   static fetchData(dispatch) {
-    dispatch(computeLeaderboard())
+    dispatch(fetchRepoLeaders())
   }
 
   render() {
-    const { leaderboard, dispatch } = this.props
+    const { leaderboard } = this.props
 
     return (
       <div className={styles.root}>

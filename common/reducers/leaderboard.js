@@ -1,4 +1,8 @@
-import { COMPUTE_LEADERBOARD_REQUEST, COMPUTE_LEADERBOARD_SUCCESS, COMPUTE_LEADERBOARD_FAILURE } from '../actions/computeLeaderboard'
+import {
+  FETCH_REPO_LEADERS_REQUEST,
+  FETCH_REPO_LEADERS_SUCCESS,
+  FETCH_REPO_LEADERS_FAILURE,
+} from '../actions/fetchRepoLeaders'
 
 const initialState = {
   leaders: [],
@@ -7,17 +11,17 @@ const initialState = {
 
 export function leaderboard(state = initialState, action) {
   switch (action.type) {
-  case COMPUTE_LEADERBOARD_REQUEST:
+  case FETCH_REPO_LEADERS_REQUEST:
     return Object.assign({}, state, {
       isLoading: true,
     })
-  case COMPUTE_LEADERBOARD_SUCCESS:
+  case FETCH_REPO_LEADERS_SUCCESS:
     return Object.assign({}, state, {
       leaders: action.leaders,
       isLoading: false,
     })
-  case COMPUTE_LEADERBOARD_FAILURE:
-    console.error('Compute leaderboard FAILURE:', action.error)
+  case FETCH_REPO_LEADERS_FAILURE:
+    console.error('Fetch repo leaders FAILURE:', action.error)
     return Object.assign({}, state, {
       leaders: [],
       isLoading: false,
