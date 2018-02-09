@@ -26,7 +26,7 @@ Be sure you've read the [instructions for contributing](./CONTRIBUTING.md).
 
         PORT=9090
         APP_BASEURL=http://localhost:9090
-        GITHUB_API_TOKEN=d196a459d29aca442d4a0885efb21117b72d04df
+        GITHUB_API_TOKEN=<a valid GitHub API token>
 
 4. Launch `flootty` to share your terminal:
 
